@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP notes</title>
+    <link rel="stylesheet" href="tpNotes.css">
+  </head>
+  
+  <body>
+  
+  
+    <div>
+      <h1>Kanban</h1>
+      <section class="parameter">
+        <div class="addNot">
+          <h2>Add notes </h2>
+          <form action="POST">
+  
+            <label for="title-note"> Title of note
+              <input type="text" name="title-note" id="title-note" placeholder="enter a title">
+            </label>
+
+            <br>
+            <label for="note-content" class="contentNot">content of note
+              <input type="text" name="note-content" id="note-content" placeholder="enter a note description">
+            </label>
+
+            <br>
+  
+          </form><input id="add-note-button" type="button" value="Validation">
+        </div>
+  
+        
+        <div class="addNot" ondrop="delet(event)"
+        ondragover="allowdrop(event)">
+          <h2>Delete notes </h2>
+          <img src="img/corbeille.png" width = "100px" height= "100px" alt="Delete" >
+        </div>
+  
+      </section>
+    </div>
+  
+    <main class="all-notes">
+      <div class="Hangout">
+        <h3>TO DO</h3>
+        <article id="todoarray">
+          
+
+        </article>
+      </div>
+  
+      <section>
+        <h3>DONE</h3>
+        <div class="Hangout" id="dropzone" ondrop="drop(event)" ondragover="allowdrop(event)">
+          <article>
+
+          </article>
+  
+  
+        </div>
+      <section>
+      
+  
+      <div>
+        <h3>VERIFIED</h3>
+        <section class="Hangout" id="dropzone" ondrop="drop(event)" ondragover="allowdrop(event)">
+        <article>
+
+        </article>
+  
+        </section>
+      </div>
+  
+    </main>
+  
+    <script src="tpNoteV2.js"></script>
+  
+  
+  </body>
+  
+  </html>

@@ -1,0 +1,68 @@
+
+body{
+    background-color: rgb(108, 127, 211);
+}
+
+section.parameter{
+    display: flex;
+    justify-content: center;
+      flex-direction: row;
+    margin-bottom: 8rem;
+    background-color: antiquewhite;
+    width: 25rem;
+    height: 20rem;
+    border : 2px aquamarine solid;
+    border-radius: 10%;
+};
+
+div .addNot{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+};
+
+
+form{
+    padding: 2rem;;
+    margin:2rem;
+    justify-content: center;
+background-color: rgb(253, 240, 116);
+};
+
+
+input{
+    margin-top: 2rem;
+    margin-left: auto
+};
+
+
+h1{
+        width: 80%;
+        height: 4vh;
+        margin-left: auto;
+
+};
+
+#add-note-button {
+    margin: auto;
+};
+
+main{
+display: flex;
+justify-content: space-between;
+};
+
+main, div{
+    width: 30%;
+    background-color: antiquewhite;
+
+}
+
+
+.Hangout{
+    background-color: antiquewhite;
+    width: 25rem;
+    height: 20rem;
+    border : 2px aquamarine solid;
+    border-radius: 10%;
+};
